@@ -118,105 +118,97 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="first-level active"><a href="#about">About</a></li>
+        <li class="first-level active"><a href="#psinder-theme-for-mkdocs">Psinder Theme for MkDocs</a></li>
         
-    
-        <li class="first-level "><a href="#install">Install</a></li>
-        
-            <li class="second-level"><a href="#install-mkdocs-create-a-new-project">Install MkDocs &amp; Create a New Project</a></li>
+            <li class="second-level"><a href="#about">About</a></li>
             
         
-            <li class="second-level"><a href="#install-the-cinder-theme">Install the Cinder Theme</a></li>
+            <li class="second-level"><a href="#install">Install</a></li>
             
-                <li class="third-level"><a href="#1-install-with-pip">1. Install with pip</a></li>
+                <li class="third-level"><a href="#install-mkdocs-create-a-new-project">Install MkDocs &amp; Create a New Project</a></li>
             
-                <li class="third-level"><a href="#2-manual-install">2. Manual Install</a></li>
-            
-        
-    
-        <li class="first-level "><a href="#test-with-a-local-site-server">Test with a Local Site Server</a></li>
-        
-    
-        <li class="first-level "><a href="#create-your-site">Create Your Site</a></li>
-        
-            <li class="second-level"><a href="#add-content-with-markdown-syntax">Add Content with Markdown Syntax</a></li>
+                <li class="third-level"><a href="#install-the-psinder-theme">Install the Psinder Theme</a></li>
             
         
-            <li class="second-level"><a href="#add-new-pages">Add New Pages</a></li>
+            <li class="second-level"><a href="#test-with-a-local-site-server">Test with a Local Site Server</a></li>
             
         
-    
-        <li class="first-level "><a href="#build-your-site">Build Your Site</a></li>
-        
-    
-        <li class="first-level "><a href="#site-customization">Site Customization</a></li>
-        
-            <li class="second-level"><a href="#site-favicon">Site Favicon</a></li>
+            <li class="second-level"><a href="#create-your-site">Create Your Site</a></li>
+            
+                <li class="third-level"><a href="#add-content-with-markdown-syntax">Add Content with Markdown Syntax</a></li>
+            
+                <li class="third-level"><a href="#add-new-pages">Add New Pages</a></li>
             
         
-            <li class="second-level"><a href="#add-your-own-css-stylesheets">Add Your Own CSS Stylesheets</a></li>
+            <li class="second-level"><a href="#build-your-site">Build Your Site</a></li>
             
         
-            <li class="second-level"><a href="#add-your-own-javascript">Add Your Own JavaScript</a></li>
+            <li class="second-level"><a href="#site-customization">Site Customization</a></li>
+            
+                <li class="third-level"><a href="#site-favicon">Site Favicon</a></li>
+            
+                <li class="third-level"><a href="#add-your-own-css-stylesheets">Add Your Own CSS Stylesheets</a></li>
+            
+                <li class="third-level"><a href="#add-your-own-javascript">Add Your Own JavaScript</a></li>
+            
+                <li class="third-level"><a href="#github-or-bitbucket-repository-link">Github or Bitbucket Repository Link</a></li>
+            
+                <li class="third-level"><a href="#license-declaration-and-link">License Declaration and Link</a></li>
             
         
-            <li class="second-level"><a href="#github-or-bitbucket-repository-link">Github or Bitbucket Repository Link</a></li>
+            <li class="second-level"><a href="#issues">Issues</a></li>
             
         
-            <li class="second-level"><a href="#license-declaration-and-link">License Declaration and Link</a></li>
+            <li class="second-level"><a href="#license">License</a></li>
             
-        
-    
-        <li class="first-level "><a href="#issues">Issues</a></li>
-        
-    
-        <li class="first-level "><a href="#license">License</a></li>
         
     
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1>Cinder Theme <small>for MkDocs</small></h1>
-
+<h1 id="psinder-theme-for-mkdocs">Psinder Theme <small>for MkDocs</small></h1>
 <h2 id="about">About</h2>
-<p>Cinder is a clean, responsive theme for static documentation sites that are generated with <a href="https://github.com/mkdocs/mkdocs">MkDocs</a>. It's built on the <a href="http://getbootstrap.com/">Bootstrap framework</a> and includes pre-packaged syntax highlighting (<a href="https://highlightjs.org/">highlight.js</a>), icons (<i class="fa fa-flag"></i> <a href="https://fortawesome.github.io/Font-Awesome/">FontAwesome</a>), and a smashingly legible type scheme to get your message out to your users.</p>
+<p>Psinder is a clean, responsive PowerShell-inspired MkDocs static documentation site generator theme -forked with love from <a href="https://twitter.com/csimpkins">Chris Simpkins</a>' <a href="https://github.com/chrissimpkins/cinder">Cinder</a>. It's built on the <a href="http://getbootstrap.com/">Bootstrap framework</a> and includes pre-packaged syntax highlighting (<a href="https://highlightjs.org/">highlight.js</a>), icons (<i class="fa fa-flag"></i> <a href="https://fortawesome.github.io/Font-Awesome/">FontAwesome</a>), and a theme based on <a href="https://github.com/lzybkr/PSReadLine">PSReadLine</a>'s default colors for a PowerShell console-themed documentation site.</p>
 <p>You are looking at the theme and can see a selection of the theme elements on the <a href="./specimen/">Specimen page</a>.</p>
 <h2 id="install">Install</h2>
 <p><strong><em>Required</em></strong>: Python 2.6+ or 3.3+</p>
 <h3 id="install-mkdocs-create-a-new-project">Install MkDocs &amp; Create a New Project</h3>
 <p>If you haven't installed MkDocs yet, use the following command to install it:</p>
-<pre><code class="nohighlight">$ pip install mkdocs</code></pre>
+<pre><code class="bash">$ pip install mkdocs
+</code></pre>
 
 <p>Next, navigate to a clean directory and create a new MkDocs project with the following command:</p>
-<pre><code class="nohighlight">$ mkdocs new [projectname]</code></pre>
+<pre><code class="bash">$ mkdocs new [projectname]
+</code></pre>
 
 <p>Replace <code>[projectname]</code> with the name of your project (without the brackets).</p>
 <p>Then navigate to the root of your project directory:</p>
-<pre><code class="nohighlight">$ cd [projectname]</code></pre>
+<pre><code class="bash">$ cd [projectname]
+</code></pre>
 
-<h3 id="install-the-cinder-theme">Install the Cinder Theme</h3>
+<h3 id="install-the-psinder-theme">Install the Psinder Theme</h3>
 <p>Choose one of the following install approaches:</p>
 <h4 id="1-install-with-pip">1. Install with pip</h4>
-<p>If you are using MkDocs v0.15.0 or higher, you can install the Cinder theme with pip using the command:</p>
-<pre><code class="nohighlight">$ pip install mkdocs-cinder</code></pre>
+<p>If you are using MkDocs v0.15.0 or higher, you can install the Psinder theme with pip using the command:</p>
+<pre><code class="bash">$ pip install mkdocs-psinder
+</code></pre>
 
-<p>MkDocs projects use a YAML settings file called <code>mkdocs.yml</code>.  This is located in the root of your project directory after you use the <code>mkdocs new</code> command.  Open the file in a text editor and modify it to define Cinder in the <code>theme</code> setting as follows (note that this is case-sensitive):</p>
+<p>MkDocs projects use a YAML settings file called <code>mkdocs.yml</code>.  This is located in the root of your project directory after you use the <code>mkdocs new</code> command.  Open the file in a text editor and modify it to define Psinder in the <code>theme</code> setting as follows (note that this is case-sensitive):</p>
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme: cinder
+theme: psinder
 pages:
 - Home: index.md
 </code></pre>
 
-<p><strong>Theme Updates</strong>: If you choose the pip install approach, you can update your Cinder theme to new releases with the command <code>$ pip install --upgrade mkdocs-cinder</code>.  Then re-build your static site files (see instructions below).</p>
+<p><strong>Theme Updates</strong>: If you choose the pip install approach, you can update your Psinder theme to new releases with the command <code>$ pip install --upgrade mkdocs-psinder</code>.  Then re-build your static site files (see instructions below).</p>
 <h4 id="2-manual-install">2. Manual Install</h4>
-<p>Download the Cinder theme archive.</p>
-<p><a href="https://github.com/chrissimpkins/cinder/releases/download/v0.9.4/cinder.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Cinder v0.9.4</button></a></p>
-<p>Unpack the contents of the archive into a directory named <code>cinder</code> at the top level of your MkDocs project directory.</p>
+<p>Download the Psinder theme archive.</p>
+<p><a href="https://github.com/michaeltlombardi/mkdocs-psinder/releases/download/Latest/mkdocs-psinder-0.1.0.zip"><button type="button" class="btn btn-success"><i class="fa fa-cloud-download"></i>  Download Psinder v0.1.0</button></a></p>
+<p>Unpack the contents of the archive into a directory named <code>psinder</code> at the top level of your MkDocs project directory.</p>
 <p>Your project directory should now look like this:</p>
-<pre><code class="nohighlight">.
-├── mkdocs.yml
-├── cinder
+<pre><code>├── mkdocs.yml
+├── psinder
 │     ├── css
 │     ├── img
 │     ├── js
@@ -232,15 +224,16 @@ pages:
 
 <p>MkDocs projects use a YAML settings file called <code>mkdocs.yml</code>.  This is located in the root of your project directory after you use the <code>mkdocs new</code> command.  Open the file in a text editor and modify it to include the <code>theme_dir</code> setting as follows:</p>
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme_dir: psinder
 pages:
 - Home: index.md
 </code></pre>
 
-<p><strong>Theme Updates</strong>: If you choose the manual install approach, you can update your Cinder theme by downloading the new cinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).</p>
+<p><strong>Theme Updates</strong>: If you choose the manual install approach, you can update your Psinder theme by downloading the new psinder.zip release archive and including it in your project. Then re-build your static site files (see instructions below).</p>
 <h2 id="test-with-a-local-site-server">Test with a Local Site Server</h2>
 <p>Use the following command to establish a local server for your site:</p>
-<pre><code class="nohighlight">$ mkdocs serve</code></pre>
+<pre><code class="bash">$ mkdocs serve
+</code></pre>
 
 <p>Then open your site in any browser at the URL <code>http://localhost:8000</code>.</p>
 <h2 id="create-your-site">Create Your Site</h2>
@@ -250,15 +243,17 @@ pages:
 <p>Add new pages to your site by creating a new Markdown file in your <code>docs</code> directory, then linking to the new page in the <code>mkdocs.yml</code> file.  This uses a <code>Page Name : Markdown file</code> syntax.</p>
 <p>For example, to add an About page using a Markdown file that is located on the path <code>docs/about.md</code>, you would format the <code>mkdocs.yml</code> file as follows:</p>
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme_dir: psinder
 pages:
 - Home: index.md
-- About: about.md</code></pre>
+- About: about.md
+</code></pre>
 
 <p>Add additional pages to your site by repeating the above series of steps.</p>
 <h2 id="build-your-site">Build Your Site</h2>
 <p>Build your site files with the command:</p>
-<pre><code class="nohighlight">$ mkdocs build</code></pre>
+<pre><code class="bash">$ mkdocs build
+</code></pre>
 
 <p>Your site files are built in the <code>site</code> directory and are ready to use.  Deploy the contents of the <code>site</code> directory to your web server.</p>
 <h2 id="site-customization">Site Customization</h2>
@@ -266,60 +261,65 @@ pages:
 <h3 id="site-favicon">Site Favicon</h3>
 <p>Place your site favicon image file in the top level of your docs directory and then include a new <code>site_favicon:</code> field in the <code>mkdocs.yml</code> file:</p>
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme_dir: psinder
 site_favicon: favicon.ico
 pages:
   - Home: index.md
-  - About: about.md</code></pre>
+  - About: about.md
+</code></pre>
 
 <h3 id="add-your-own-css-stylesheets">Add Your Own CSS Stylesheets</h3>
-<p>Create a <code>css</code> directory inside your <code>docs</code> directory and add your CSS files.  You can overwrite any of the Cinder styles in your CSS files.  Then include your CSS files in the <code>mkdocs.yml</code> file with the <code>extra_css</code> field:</p>
+<p>Create a <code>css</code> directory inside your <code>docs</code> directory and add your CSS files.  You can overwrite any of the Psinder styles in your CSS files.  Then include your CSS files in the <code>mkdocs.yml</code> file with the <code>extra_css</code> field:</p>
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme_dir: psinder
 extra_css:
-  - "css/mystyle.css"
-  - "css/myotherstyle.css"
+  - &quot;css/mystyle.css&quot;
+  - &quot;css/myotherstyle.css&quot;
 pages:
   - Home: index.md
-  - About: about.md</code></pre>
+  - About: about.md
+</code></pre>
 
-<p>Your CSS styles fall at the end of the cascade and will override all styles included in the theme (including Bootstrap and default Cinder styles).  You can find the Cinder and Bootstrap CSS files on the paths <code>cinder/css/cinder.css</code> and <code>cinder/css/bootstrap.min.css</code>, respectively.</p>
+<p>Your CSS styles fall at the end of the cascade and will override all styles included in the theme (including Bootstrap and default Psinder styles).  You can find the Psinder and Bootstrap CSS files on the paths <code>psinder/css/psinder.css</code> and <code>psinder/css/bootstrap.min.css</code>, respectively.</p>
 <h3 id="add-your-own-javascript">Add Your Own JavaScript</h3>
 <p>Create a <code>js</code> directory inside your <code>docs</code> directory and add your JS files.  Then include your JS files in the <code>mkdocs.yml</code> file with the <code>extra_js</code> field:</p>
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
+theme_dir: psinder
 extra_js:
-  - "js/myscript.js"
-  - "js/myotherscript.js"
+  - &quot;js/myscript.js&quot;
+  - &quot;js/myotherscript.js&quot;
 pages:
   - Home: index.md
-  - About: about.md</code></pre>
+  - About: about.md
+</code></pre>
 
 <h3 id="github-or-bitbucket-repository-link">Github or Bitbucket Repository Link</h3>
 <p>Include the <code>repo_url</code> field and define it with your repository URL:</p>
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
-repo_url: "https://github.com/chrissimpkins/cinder"
+theme_dir: psinder
+repo_url: &quot;https://github.com/michaeltlombardi/mkdocs-psinder&quot;
 pages:
   - Home: index.md
-  - About: about.md</code></pre>
+  - About: about.md
+</code></pre>
 
 <p>The link appears at the upper right hand corner of your site.</p>
 <h3 id="license-declaration-and-link">License Declaration and Link</h3>
-<p>The Cinder theme displays your license declaration in the footer if you include a <code>copyright</code> field and define it with the text (and optionally the HTML link) that you would like to display:</p>
+<p>The Psinder theme displays your license declaration in the footer if you include a <code>copyright</code> field and define it with the text (and optionally the HTML link) that you would like to display:</p>
 <pre><code class="yaml">site_name: [YOURPROJECT]
-theme_dir: cinder
-copyright: "Cinder is licensed under the &lt;a href='https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md'&gt;MIT license</a>"
+theme_dir: psinder
+copyright: &quot;Psinder is licensed under the &amp;lt;a href='https://github.com/michaeltlombardi/mkdocs-psinder/blob/master/LICENSE.md'&amp;gt;MIT license&lt;/a&gt;&quot;
 pages:
   - Home: index.md
-  - About: about.md</code></pre>
+  - About: about.md
+</code></pre>
 
 <h2 id="issues">Issues</h2>
-<p>If you have any issues with the theme, please report them on the Cinder repository:</p>
-<p><a href="https://github.com/chrissimpkins/cinder/issues/new"><button class="btn btn-primary" type="submit">Report Issue</button></a>
-<a href="https://github.com/chrissimpkins/cinder/issues"><button class="btn btn-primary" type="submit">Active Issues</button></a></p>
+<p>If you have any issues with the theme, please report them on the Psinder repository:</p>
+<p><a href="https://github.com/michaeltlombardi/mkdocs-psinder/issues/new"><button class="btn btn-primary" type="submit">Report Issue</button></a>
+<a href="https://github.com/michaeltlombardi/mkdocs-psinder/issues"><button class="btn btn-primary" type="submit">Active Issues</button></a></p>
 <h2 id="license">License</h2>
-<p>Cinder is licensed under the MIT license. The full text of the license is available <a href="https://github.com/chrissimpkins/cinder/blob/master/LICENSE.md">here</a>.</p></div>
+<p>Psinder is licensed under the MIT license. The full text of the license is available <a href="https://github.com/michaeltlombardi/mkdocs-psinder/blob/master/LICENSE.md">here</a>.</p></div>
         
     </div>
 
@@ -374,5 +374,5 @@ pages:
 
 <!--
 MkDocs version : 0.15.3
-Build Date UTC : 2016-04-16 20:59:55.386984
+Build Date UTC : 2016-04-16 22:19:03.241609
 -->
