@@ -9,8 +9,12 @@ h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id
     height: 75px;
 }
 
-ul.nav li.main {
+ul.nav li.first-level {
     font-weight: bold;
+}
+
+ul.nav li.third-level {
+    padding-left: 12px;
 }
 
 div.col-md-3 {
@@ -53,20 +57,23 @@ div.source-links {
 /* All levels of nav */
 .bs-sidebar .nav > li > a {
     display: block;
+    color: #f5f5f5;
     padding: 5px 20px;
     z-index: 1;
 }
 .bs-sidebar .nav > li > a:hover,
 .bs-sidebar .nav > li > a:focus {
     text-decoration: none;
-    border-right: 1px solid;
+    color: #000;
+    border-right: 2px solid;
+    background-color: #386CB8
 }
 .bs-sidebar .nav > .active > a,
 .bs-sidebar .nav > .active:hover > a,
 .bs-sidebar .nav > .active:focus > a {
+    color: #000;
     font-weight: bold;
-    background-color: transparent;
-    border-right: 1px solid;
+    border-right: 2px solid;
 }
 
 /* Nav: second level (shown on .active) */
@@ -110,4 +117,55 @@ div.source-links {
     .bs-sidebar.affix {
         width: 263px;
     }
+}
+
+
+/* Added to support >2 level nav in drop down */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 00px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
 }
