@@ -204,6 +204,26 @@
             "location": "/specimen/#block-level-buttons",
             "text": "Block level button  Block level button",
             "title": "Block Level Buttons"
+        },
+        {
+            "location": "/configuration/",
+            "text": "Configuration\n\n\nAlternate \"Edit on...\" Repo Branch\n\n\nIf you'd like the \"Edit on...\" link in the footer to point to a branch \nother\n than master, in the \nextra\n section of your mkdocs.yml specify \nrepo_branch: branchName\n.\n\n\nExample: \"Edit on...\" Dev Branch\n\n\nextra:\n    repo_branch: dev",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#configuration",
+            "text": "",
+            "title": "Configuration"
+        },
+        {
+            "location": "/configuration/#alternate-edit-on-repo-branch",
+            "text": "If you'd like the \"Edit on...\" link in the footer to point to a branch  other  than master, in the  extra  section of your mkdocs.yml specify  repo_branch: branchName .",
+            "title": "Alternate \"Edit on...\" Repo Branch"
+        },
+        {
+            "location": "/configuration/#example-edit-on-dev-branch",
+            "text": "extra:\n    repo_branch: dev",
+            "title": "Example: \"Edit on...\" Dev Branch"
         }
     ]
 }
