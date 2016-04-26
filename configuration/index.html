@@ -55,7 +55,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href="..">Psinder</a>
+            <a class="navbar-brand" href="../index.html">Psinder</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -66,19 +66,19 @@
                 
                 
                     <li >
-                        <a href="..">Home</a>
+                        <a href="../index.html">Home</a>
                     </li>
                 
                 
                 
                     <li >
-                        <a href="../specimen/">Specimen</a>
+                        <a href="../specimen/index.html">Specimen</a>
                     </li>
                 
                 
                 
                     <li class="active">
-                        <a href="./">Configuration</a>
+                        <a href="index.html">Configuration</a>
                     </li>
                 
                 
@@ -93,7 +93,7 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../specimen/">
+                        <a rel="next" href="../specimen/index.html">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -127,8 +127,10 @@
         
             <li class="second-level"><a href="#alternate-edit-on-repo-branch">Alternate "Edit on..." Repo Branch</a></li>
             
+                <li class="third-level"><a href="#example-edit-on-dev-branch">Example: "Edit on..." Dev Branch</a></li>
+            
         
-            <li class="second-level"><a href="#example-edit-on-dev-branch">Example: "Edit on..." Dev Branch</a></li>
+            <li class="second-level"><a href="#disable-code-line-wrapping">Disable Code Line Wrapping</a></li>
             
         
     
@@ -137,11 +139,18 @@
         <div class="col-md-9" role="main">
 
 <h1 id="configuration">Configuration</h1>
-<h3 id="alternate-edit-on-repo-branch">Alternate "Edit on..." Repo Branch</h3>
+<h2 id="alternate-edit-on-repo-branch">Alternate "Edit on..." Repo Branch</h2>
 <p>If you'd like the "Edit on..." link in the footer to point to a branch <em>other</em> than master, in the <code>extra</code> section of your mkdocs.yml specify <code>repo_branch: branchName</code>.</p>
 <h3 id="example-edit-on-dev-branch">Example: "Edit on..." Dev Branch</h3>
 <pre><code class="yaml">extra:
     repo_branch: dev
+</code></pre>
+
+<h2 id="disable-code-line-wrapping">Disable Code Line Wrapping</h2>
+<p>If you do <strong>not</strong> want code lines to wrap (they do by default), in the <code>extra</code> section of your mkdocs.yml specify <code>nowrap: true</code>.
+This will cause a scroll bar to be added to code blocks which would otherwise wrap.</p>
+<pre><code class="yaml">extra:
+    nowrap: true
 </code></pre></div>
         
     </div>
