@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta name="author" content="Michael T Lombardi">  
-    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="author" content="Michael T Lombardi"> 
+    <link rel="canonical" href="https://michaeltlombardi.github.io/mkdocs-psinder/configuration/index.html"> 
+    <link rel="shortcut icon" href="../../static/favicon.ico">
 
     <title>Configuration - Psinder</title>
 
@@ -120,7 +121,17 @@
 
     <div class="container">
         
-        <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+        <div class="col-md-3">
+            
+                <div class="tags hidden-print" id="tags">
+                
+                    <span class="label label-info">meta</span>
+                
+                    <span class="label label-info">configuration</span>
+                
+                </div>
+            
+            <div class="bs-sidebar hidden-print affix well" role="complementary" id="sideNav">
     <ul class="nav bs-sidenav">
     
         <li class="first-level active"><a href="#configuration">Configuration</a></li>
@@ -132,11 +143,27 @@
         
             <li class="second-level"><a href="#disable-code-line-wrapping">Disable Code Line Wrapping</a></li>
             
+                <li class="third-level"><a href="#example-disable-code-line-wrapping">Example: Disable Code Line Wrapping</a></li>
+            
+        
+            <li class="second-level"><a href="#add-tags">Add Tags</a></li>
+            
+                <li class="third-level"><a href="#example-adding-tags">Example: Adding Tags</a></li>
+            
+        
+            <li class="second-level"><a href="#disqus-integration">Disqus Integration</a></li>
+            
+                <li class="third-level"><a href="#example-disqus-integration">Example: Disqus Integration</a></li>
+            
+                <li class="third-level"><a href="#example-enable-comments">Example: Enable Comments</a></li>
+            
         
     
     </ul>
-</div></div>
+</div>
+        </div>
         <div class="col-md-9" role="main">
+            
 
 <h1 id="configuration">Configuration</h1>
 <h2 id="alternate-edit-on-repo-branch">Alternate "Edit on..." Repo Branch</h2>
@@ -149,9 +176,69 @@
 <h2 id="disable-code-line-wrapping">Disable Code Line Wrapping</h2>
 <p>If you do <strong>not</strong> want code lines to wrap (they do by default), in the <code>extra</code> section of your mkdocs.yml specify <code>nowrap: true</code>.
 This will cause a scroll bar to be added to code blocks which would otherwise wrap.</p>
+<h3 id="example-disable-code-line-wrapping">Example: Disable Code Line Wrapping</h3>
 <pre><code class="yaml">extra:
     nowrap: true
-</code></pre></div>
+</code></pre>
+
+<h2 id="add-tags">Add Tags</h2>
+<p>If you'd like to add meta-data tags to a given page, you can now do so simply by specifying the tags.
+At the top of the document page, insert the tags as shown below.
+The metadata <em>must</em> be the first component of the document.
+See this page's <a href="">source</a> for another example.</p>
+<h3 id="example-adding-tags">Example: Adding Tags</h3>
+<pre><code class="markdown">---
+Tags: tutorial
+      easy
+---
+# Page Title
+Page content goes here...
+</code></pre>
+
+<h2 id="disqus-integration">Disqus Integration</h2>
+<p>You can also add a <a href="">Disqus</a> comment section to individual pages of your site.
+You'll need to have already <a href="https://disqus.com/admin/create/">registered</a> a Disqus site.
+If you want to enable a Disqus integration, in the <code>extra</code> setion of your mkdocs.yml specify <code>disqus: &lt;your Disqus site name&gt;</code> - make sure to replace <your Disqus site name> with the name proceeding <code>.disqus.com</code>.</p>
+<p>You'll also have to specify <code>Comments: True</code> in the metadata for pages you want comments on.
+As with adding Tags to the metadata for a page, the metadata <em>must</em> be the first component of the document.</p>
+<h3 id="example-disqus-integration">Example: Disqus Integration</h3>
+<pre><code class="yaml">extra:
+    disqus: psinder
+</code></pre>
+
+<h3 id="example-enable-comments">Example: Enable Comments</h3>
+<pre><code class="markdown">---
+Comments: True
+---
+# Page Title
+Page content goes here...
+</code></pre>
+            
+                
+                    <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+
+var disqus_config = function () {
+this.page.url = "https://michaeltlombardi.github.io/mkdocs-psinder/configuration/index.html"; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "Configuration"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//psinder.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                
+            
+        </div>
         
     </div>
 
@@ -170,6 +257,7 @@ This will cause a scroll bar to be added to code blocks which would otherwise wr
 
     <script src="../js/jquery-1.10.2.min.js"></script>
     <script src="../js/bootstrap-3.0.3.min.js"></script>
+    <script src="../js/tags.js"></script>
     <script src="../js/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
     <script>

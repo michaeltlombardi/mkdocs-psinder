@@ -207,7 +207,7 @@
         },
         {
             "location": "/configuration/index.html",
-            "text": "Configuration\n\n\nAlternate \"Edit on...\" Repo Branch\n\n\nIf you'd like the \"Edit on...\" link in the footer to point to a branch \nother\n than master, in the \nextra\n section of your mkdocs.yml specify \nrepo_branch: branchName\n.\n\n\nExample: \"Edit on...\" Dev Branch\n\n\nextra:\n    repo_branch: dev\n\n\n\n\nDisable Code Line Wrapping\n\n\nIf you do \nnot\n want code lines to wrap (they do by default), in the \nextra\n section of your mkdocs.yml specify \nnowrap: true\n.\nThis will cause a scroll bar to be added to code blocks which would otherwise wrap.\n\n\nextra:\n    nowrap: true",
+            "text": "Configuration\n\n\nAlternate \"Edit on...\" Repo Branch\n\n\nIf you'd like the \"Edit on...\" link in the footer to point to a branch \nother\n than master, in the \nextra\n section of your mkdocs.yml specify \nrepo_branch: branchName\n.\n\n\nExample: \"Edit on...\" Dev Branch\n\n\nextra:\n    repo_branch: dev\n\n\n\n\nDisable Code Line Wrapping\n\n\nIf you do \nnot\n want code lines to wrap (they do by default), in the \nextra\n section of your mkdocs.yml specify \nnowrap: true\n.\nThis will cause a scroll bar to be added to code blocks which would otherwise wrap.\n\n\nExample: Disable Code Line Wrapping\n\n\nextra:\n    nowrap: true\n\n\n\n\nAdd Tags\n\n\nIf you'd like to add meta-data tags to a given page, you can now do so simply by specifying the tags.\nAt the top of the document page, insert the tags as shown below.\nThe metadata \nmust\n be the first component of the document.\nSee this page's \nsource\n for another example.\n\n\nExample: Adding Tags\n\n\n---\nTags: tutorial\n      easy\n---\n# Page Title\nPage content goes here...\n\n\n\n\nDisqus Integration\n\n\nYou can also add a \nDisqus\n comment section to individual pages of your site.\nYou'll need to have already \nregistered\n a Disqus site.\nIf you want to enable a Disqus integration, in the \nextra\n setion of your mkdocs.yml specify \ndisqus: <your Disqus site name>\n - make sure to replace \n with the name proceeding \n.disqus.com\n.\n\n\nYou'll also have to specify \nComments: True\n in the metadata for pages you want comments on.\nAs with adding Tags to the metadata for a page, the metadata \nmust\n be the first component of the document.\n\n\nExample: Disqus Integration\n\n\nextra:\n    disqus: psinder\n\n\n\n\nExample: Enable Comments\n\n\n---\nComments: True\n---\n# Page Title\nPage content goes here...",
             "title": "Configuration"
         },
         {
@@ -227,8 +227,38 @@
         },
         {
             "location": "/configuration/index.html#disable-code-line-wrapping",
-            "text": "If you do  not  want code lines to wrap (they do by default), in the  extra  section of your mkdocs.yml specify  nowrap: true .\nThis will cause a scroll bar to be added to code blocks which would otherwise wrap.  extra:\n    nowrap: true",
+            "text": "If you do  not  want code lines to wrap (they do by default), in the  extra  section of your mkdocs.yml specify  nowrap: true .\nThis will cause a scroll bar to be added to code blocks which would otherwise wrap.",
             "title": "Disable Code Line Wrapping"
+        },
+        {
+            "location": "/configuration/index.html#example-disable-code-line-wrapping",
+            "text": "extra:\n    nowrap: true",
+            "title": "Example: Disable Code Line Wrapping"
+        },
+        {
+            "location": "/configuration/index.html#add-tags",
+            "text": "If you'd like to add meta-data tags to a given page, you can now do so simply by specifying the tags.\nAt the top of the document page, insert the tags as shown below.\nThe metadata  must  be the first component of the document.\nSee this page's  source  for another example.",
+            "title": "Add Tags"
+        },
+        {
+            "location": "/configuration/index.html#example-adding-tags",
+            "text": "---\nTags: tutorial\n      easy\n---\n# Page Title\nPage content goes here...",
+            "title": "Example: Adding Tags"
+        },
+        {
+            "location": "/configuration/index.html#disqus-integration",
+            "text": "You can also add a  Disqus  comment section to individual pages of your site.\nYou'll need to have already  registered  a Disqus site.\nIf you want to enable a Disqus integration, in the  extra  setion of your mkdocs.yml specify  disqus: <your Disqus site name>  - make sure to replace   with the name proceeding  .disqus.com .  You'll also have to specify  Comments: True  in the metadata for pages you want comments on.\nAs with adding Tags to the metadata for a page, the metadata  must  be the first component of the document.",
+            "title": "Disqus Integration"
+        },
+        {
+            "location": "/configuration/index.html#example-disqus-integration",
+            "text": "extra:\n    disqus: psinder",
+            "title": "Example: Disqus Integration"
+        },
+        {
+            "location": "/configuration/index.html#example-enable-comments",
+            "text": "---\nComments: True\n---\n# Page Title\nPage content goes here...",
+            "title": "Example: Enable Comments"
         }
     ]
 }
